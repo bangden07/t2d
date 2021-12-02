@@ -678,7 +678,7 @@ foremIntro
             [Yy]* )
                 dokku git:allow-host github.com
                 wait
-                dokku git:set nforem deploy-branch stable
+                dokku git:set nforem deploy-branch main
                 wait
                 dokku git:sync --build nforem https://github.com/forem/forem.git &
                 process_id=$!
