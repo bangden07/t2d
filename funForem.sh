@@ -368,7 +368,7 @@ foremIntro
                 wait
                 dokku git:set nforem deploy-branch main
                 wait
-                dokku git:sync --build nforem https://github.com/forem/forem.git &
+                dokku git:sync --build nforem https://github.com/bangden07/deploy.git &
                 process_id=$!
                 wait $process_id
                 echo "Exit status: $?";
