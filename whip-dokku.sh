@@ -451,9 +451,9 @@ function funForem()
     # Clone repository and Build Forem
     dokku git:allow-host github.com
     wait
-    dokku git:set nforem deploy-branch main
+    dokku git:set nforem deploy-branch stable
     wait
-    dokku git:sync --build nforem https://github.com/akhil-naidu/forem.git
+    dokku git:sync --build nforem https://github.com/forem/forem.git
     wait 
     echo "${GREEN}There you go :), Leave a like if you successfully configured your Forem${END}" 
 }
